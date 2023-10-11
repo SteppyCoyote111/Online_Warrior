@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class TestSettingsCastleResource : MonoBehaviour
 {
@@ -12,5 +13,11 @@ public class TestSettingsCastleResource : MonoBehaviour
         CastleData.Eat = Eat;
         CastleData.Wood = Wood;
         CastleData.Gold = Gold;
+    }
+
+    public void Awake()
+    {
+        Debug.Log("Add Resource in Awake Game");
+        ChangesToCastleRes();
     }
 }

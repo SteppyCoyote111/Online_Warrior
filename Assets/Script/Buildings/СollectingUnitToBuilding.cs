@@ -19,6 +19,8 @@ namespace Script.Buildings
             {
                 Gold -= validate.CountCollectUnit * PriceCollectiingUnitOneLevel;
                 UnitEquippedOneLevel += validate.CountCollectUnit;
+                UnitOneLevel -= validate.CountCollectUnit;
+                ShowCollectUnit();
             }
         }
 
